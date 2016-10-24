@@ -265,62 +265,65 @@ section .section-intro {
 
 /* line 169, ../sass/style.scss */
 .section-footer {
+  display: inline-block;
   padding: 25px 0;
 }
-/* line 171, ../sass/style.scss */
-.section-footer p {
-  display: inline-block;
+/* line 172, ../sass/style.scss */
+.section-footer p, .section-footer a {
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
   line-height: 16px;
-  margin-left: 5px;
+}
+/* line 177, ../sass/style.scss */
+.section-footer a {
+  margin-left: 12px;
 }
 
-/* line 181, ../sass/style.scss */
+/* line 183, ../sass/style.scss */
 .photo section {
   padding-top: 0;
   padding-bottom: 0;
 }
-/* line 185, ../sass/style.scss */
+/* line 187, ../sass/style.scss */
 .photo .section-intro {
   padding: 100px 0;
 }
-/* line 188, ../sass/style.scss */
+/* line 190, ../sass/style.scss */
 .photo .section-photo {
   margin-bottom: 100px;
 }
 
-/* line 194, ../sass/style.scss */
+/* line 196, ../sass/style.scss */
 .section-about section {
   padding-bottom: 70px;
   margin-bottom: 25px;
 }
-/* line 198, ../sass/style.scss */
+/* line 200, ../sass/style.scss */
 .section-about h2 {
   text-align: left;
   font-size: 60px;
 }
-/* line 202, ../sass/style.scss */
+/* line 204, ../sass/style.scss */
 .section-about .section-copy {
   margin-bottom: 0;
   margin-top: 25px;
   line-height: 29px;
   font-size: 20px;
 }
-/* line 208, ../sass/style.scss */
+/* line 210, ../sass/style.scss */
 .section-about .section-header {
   margin-bottom: 30px;
 }
 
-/* line 215, ../sass/style.scss */
+/* line 217, ../sass/style.scss */
 .box {
   width: 100%;
   height: 100%;
   position: relative;
 }
-/* line 220, ../sass/style.scss */
+/* line 222, ../sass/style.scss */
 .box .overlay {
-  background: #AAA;
+  background: #F4f4f4;
   height: 100%;
   width: 100%;
   opacity: 0;
@@ -328,7 +331,7 @@ section .section-intro {
   position: absolute;
   transition: all .5s;
 }
-/* line 230, ../sass/style.scss */
+/* line 232, ../sass/style.scss */
 .box:hover .overlay {
   opacity: .3;
 }

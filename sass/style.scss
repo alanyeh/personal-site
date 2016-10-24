@@ -167,13 +167,15 @@ section {
 }
 
 .section-footer {
+	display: inline-block;
 	padding: 25px 0;
-	p {
-		display: inline-block;
+	p, a {
 		font-family: 'Montserrat', sans-serif;
 		font-size: 12px;
 		line-height: 16px;
-		margin-left: 5px;
+	}
+	a {
+		margin-left: 12px;
 	}
 }
 
@@ -218,7 +220,7 @@ section {
 	position: relative;
 
 	.overlay {
-		background: #AAA;
+		background: #F4f4f4;
 		height: 100%;
 		width: 100%;
 		opacity: 0;
