@@ -108,7 +108,7 @@ nav .end-md > * {
   font-size: 12px;
   display: inline;
   font-weight: 500;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 /* line 32, ../sass/style.scss */
 nav .end-md > *:hover {
@@ -216,41 +216,45 @@ section .section-intro {
 .content .section-copy {
   margin-bottom: 50px;
 }
-/* line 124, ../sass/style.scss */
+/* line 125, ../sass/style.scss */
+.content .section-copy:first-child {
+  margin-top: 0px;
+}
+/* line 128, ../sass/style.scss */
 .content .section-copy a {
   text-decoration: underline;
   text-align: left;
   font-weight: 600;
 }
-/* line 129, ../sass/style.scss */
+/* line 133, ../sass/style.scss */
 .content .section-copy strong {
   font-weight: 600;
 }
-/* line 133, ../sass/style.scss */
+/* line 137, ../sass/style.scss */
 .content .element {
   margin-bottom: 10px;
 }
-/* line 136, ../sass/style.scss */
+/* line 140, ../sass/style.scss */
 .content .caption {
   margin-top: 10px;
   margin-bottom: 50px;
 }
 
-/* line 142, ../sass/style.scss */
+/* line 146, ../sass/style.scss */
 .section-intro {
   line-height: 50px;
 }
 
-/* line 147, ../sass/style.scss */
+/* line 151, ../sass/style.scss */
 .section-fresh .section-copy-first {
   margin-bottom: 25px;
 }
 
-/* line 153, ../sass/style.scss */
+/* line 157, ../sass/style.scss */
 .section-parking p {
   margin-bottom: 25px;
 }
-/* line 156, ../sass/style.scss */
+/* line 160, ../sass/style.scss */
 .section-parking article + [data-readmore-toggle] {
   font-family: "adobe-caslon-pro", Georgia, "Times New Roman", sans-serif;
   font-size: 14px;
@@ -259,11 +263,11 @@ section .section-intro {
   margin-left: 5px;
 }
 
-/* line 165, ../sass/style.scss */
+/* line 169, ../sass/style.scss */
 .section-footer {
   padding: 25px 0;
 }
-/* line 167, ../sass/style.scss */
+/* line 171, ../sass/style.scss */
 .section-footer p {
   display: inline-block;
   font-family: 'Montserrat', sans-serif;
@@ -272,54 +276,49 @@ section .section-intro {
   margin-left: 5px;
 }
 
-/* line 176, ../sass/style.scss */
-.section-timer, .section-china, .section-aboutp {
-  margin-bottom: 25px;
-}
-
-/* line 182, ../sass/style.scss */
-.section-photo section {
+/* line 181, ../sass/style.scss */
+.photo section {
+  padding-top: 0;
   padding-bottom: 0;
-  margin-bottom: 25px;
 }
-/* line 186, ../sass/style.scss */
-.section-photo .subsection-subhead {
-  margin-bottom: 70px;
+/* line 185, ../sass/style.scss */
+.photo .section-intro {
+  padding: 100px 0;
 }
-/* line 189, ../sass/style.scss */
-.section-photo .section-header {
-  margin-bottom: 25px;
+/* line 188, ../sass/style.scss */
+.photo .section-photo {
+  margin-bottom: 100px;
 }
 
-/* line 196, ../sass/style.scss */
-.section-about h2 {
-  text-align: left;
-  font-size: 60px;
-}
-/* line 201, ../sass/style.scss */
-.section-about .section-copy {
-  margin-bottom: 0;
-  margin-top: 25px;
-  font-size: 20px;
-  line-height: 30px;
-}
-/* line 207, ../sass/style.scss */
-.section-about .section-header {
-  margin-bottom: 30px;
-}
-/* line 210, ../sass/style.scss */
+/* line 194, ../sass/style.scss */
 .section-about section {
   padding-bottom: 70px;
   margin-bottom: 25px;
 }
+/* line 198, ../sass/style.scss */
+.section-about h2 {
+  text-align: left;
+  font-size: 60px;
+}
+/* line 202, ../sass/style.scss */
+.section-about .section-copy {
+  margin-bottom: 0;
+  margin-top: 25px;
+  line-height: 29px;
+  font-size: 20px;
+}
+/* line 208, ../sass/style.scss */
+.section-about .section-header {
+  margin-bottom: 30px;
+}
 
-/* line 218, ../sass/style.scss */
+/* line 215, ../sass/style.scss */
 .box {
   width: 100%;
   height: 100%;
   position: relative;
 }
-/* line 223, ../sass/style.scss */
+/* line 220, ../sass/style.scss */
 .box .overlay {
   background: #AAA;
   height: 100%;
@@ -329,7 +328,7 @@ section .section-intro {
   position: absolute;
   transition: all .5s;
 }
-/* line 233, ../sass/style.scss */
+/* line 230, ../sass/style.scss */
 .box:hover .overlay {
   opacity: .3;
 }
