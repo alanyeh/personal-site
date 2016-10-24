@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteBase /blog
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$  proxy.php?url=http://alanyeh.tumblr.com/$1

@@ -1,0 +1,211 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "partials/viewport";
+@import "partials/align";
+
+$bottom-25px: 25px;
+$bottom-10px: 10px;
+
+body {
+	overflow-x: hidden;
+	color: #444;
+}
+
+.background-alt {
+	background-color: #FAFAFA;
+}
+
+nav {
+	padding: 20px 0;
+
+	.col-xs-12 {
+		h1 {
+			margin-bottom: $bottom-10px;
+		}
+	}
+	.end-md > *{
+		font-family: 'Montserrat', sans-serif;
+		font-size: 12px;
+		display: inline;
+		font-weight: 500;
+		margin-left: 5px;
+		&:hover {
+			text-emphasis: underline;
+		}
+	}
+}
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-size: 1.7em;
+	letter-spacing: 2px;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+h2, h3 {
+	font-family: "adobe-caslon-pro", Georgia, "Times New Roman", sans-serif;
+	font-size: 1.2em;
+	font-weight: 100;
+	letter-spacing: 0.4px;
+}
+
+h3 {
+	font-size: 18px;
+}
+
+h4 {
+	letter-spacing: 0.5px;
+}
+
+p {
+	font-family: "adobe-caslon-pro", Georgia, "Times New Roman", sans-serif;
+	font-size: 14px;
+	letter-spacing: 0.4px;
+	font-weight: 200;
+}
+
+//Links
+a {
+	color: inherit;
+	text-decoration: none;
+	&:hover {
+		color: inherit;
+		text-decoration: none;
+		cursor:pointer;
+	}
+}
+
+.content {
+	&.col-lg-6 {
+		max-width: 800px;
+	}
+}
+section {
+	padding: 160px 0;
+
+	img {
+		max-width: 100%
+	}
+	.header {
+		display: block;
+		font-weight: 400;
+		font-size: 25px;
+		margin-bottom: 15px;
+	}
+	p {
+		text-align: left;
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	& .section-intro {
+		padding: 100px 0;
+	}
+}
+
+.content {
+	.section-header {
+		font-size: 40px;
+		margin-bottom: 15px;
+	}
+	.section-subhead {
+		margin-bottom: 15px;
+	}
+	.subsection-subhead {
+		margin-bottom: 20px;
+		line-height: 20px;
+	}
+	.section-copy {
+		margin-bottom: 50px;
+		a {
+			text-decoration: underline;
+			text-align: left;
+			font-weight: 600;
+		}
+		strong {
+			font-weight: 600;
+		}
+	}
+	.element {
+ 		margin-bottom: $bottom-10px;
+	}
+	.caption {
+		margin-top: 10px;
+    margin-bottom: 50px;
+	}
+}
+
+.section-intro {
+	line-height: 50px;
+}
+
+.section-fresh {
+	.section-copy-first {
+		margin-bottom: 25px;
+	}
+}
+
+.section-parking {
+	p {
+		margin-bottom: $bottom-25px;
+	}
+	article + [data-readmore-toggle] {
+		font-family: "adobe-caslon-pro", Georgia, "Times New Roman", sans-serif;
+		font-size: 14px;
+		margin-top: $bottom-10px;
+		color: #00A1DF;
+		margin-left: 5px;
+	}
+}
+
+.section-footer {
+	padding: 25px 0;
+	p {
+		display: inline-block;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 12px;
+		line-height: 16px;
+		margin-left: 5px;
+	}
+}
+
+.section-timer, .section-china, .section-aboutp {
+	margin-bottom: 25px;
+}
+
+.section-photo {
+
+	section {
+		padding-bottom: 0;
+		margin-bottom: $bottom-25px;
+	}
+	.subsection-subhead {
+		margin-bottom: 70px;
+	}
+	.section-header {
+		margin-bottom: $bottom-25px;
+	}
+}
+
+.section-about {
+
+	h2 {
+		text-align: left;
+		font-size: 60px;
+
+	}
+	.section-copy {
+		margin-bottom: 0;
+		margin-top: 25px;
+		font-size: 20px;
+		line-height: 30px;
+	}
+	.section-header {
+		margin-bottom: 30px;
+	}
+	section {
+		padding-bottom: 70px;
+		margin-bottom: $bottom-25px;
+	}
+}
