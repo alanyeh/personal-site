@@ -6,6 +6,10 @@
 $bottom-25px: 25px;
 $bottom-10px: 10px;
 
+html {
+	overflow-x: hidden;
+}
+
 body {
 	overflow-x: hidden;
 	color: #444;
@@ -16,6 +20,7 @@ body {
 }
 
 nav {
+	overflow-x: hidden;
 	padding: 20px 0;
 	.end-md > *{
 		font-family: 'Montserrat', sans-serif;
@@ -229,4 +234,36 @@ section {
 		opacity: .3;
 	 }
  	}
+}
+
+//small viewport
+@media (max-width: 675px) {
+	.overview {
+		.box {
+			padding: 75px 0;
+		}
+		.image {
+			padding-bottom: 30px;
+		}
+	}
+	.photo {
+		.caption {
+			text-align: center;
+		}
+	}
+	nav {
+		padding: 40px 0;
+
+		.nav-header {
+			margin-bottom: 10px;
+		}
+
+		h3 {
+			font-size: 14px;
+		}
+
+		.end-md > * {
+			font-size: 15px;
+		}
+	}
 }
