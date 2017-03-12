@@ -1,0 +1,26 @@
+{
+  "name": "personal-site",
+  "version": "1.0.0",
+  "description": "My portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss/style.scss public/css/style.css",
+
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alanyeh/personal-site.git"
+  },
+  "author": "Alan Yeh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alanyeh/personal-site/issues"
+  },
+  "homepage": "https://github.com/alanyeh/personal-site",
+  "devDependencies": {
+    "node-sass": "^4.5.0",
+    "nodemon": "^1.11.0"
+  }
+}
