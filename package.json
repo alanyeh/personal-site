@@ -4,10 +4,7 @@
   "description": "My portfolio website",
   "main": "index.js",
   "scripts": {
-    "build-css": "node-sass --include-path scss/style.scss public/css/style.css",
-
-    "watch-css": "nodemon -e scss -x \"npm run build-css\""
-
+    "build-css": "node-sass -w scss/ -o css/"
   },
   "repository": {
     "type": "git",
