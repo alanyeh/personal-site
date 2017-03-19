@@ -1,25 +1,50 @@
 @import "partials/viewport";
 @import "partials/align";
 
-$bottom-25px: 25px;
-$bottom-10px: 10px;
+* {
+	margin:0;
+	padding:0;
+}
+//sticky footer
+html, body {height: 100%;
+}
+
+
+.wrap {
+	min-height: 100%;
+}
+
+.main {
+	overflow: auto;
+	padding-bottom: 100px;
+}  /* must be same height as the footer */
+
+.footer {
+	position: relative;
+	margin-top: -100px; /* negative value of footer height */
+	height: 100px;
+	clear: both;
+}
 
 html {
 	overflow-x: hidden;
 }
 
 body {
-	overflow-x: hidden;
 	color: #444;
 }
 
 .background-alt {
 	background-color: #FAFAFA;
 }
+.background-footer,
+.background-nav {
+	background-color: #F6F6F6;
+}
 
 nav {
 	overflow-x: hidden;
-	padding: 20px 0;
+	padding: 30px 0;
 	.end-md > *{
 		font-family: 'Montserrat', sans-serif;
 		font-size: 12px;
@@ -119,6 +144,7 @@ section {
 		margin-bottom: 20px;
 		line-height: 29px;
 		font-size: 20px;
+		font-weight: 100;
 	}
 	.section-copy {
 		margin-bottom: 50px;
@@ -136,7 +162,7 @@ section {
 		}
 	}
 	.element {
- 		margin-bottom: $bottom-10px;
+ 		margin-bottom: 10px;
 	}
 	.caption {
 		margin-top: 10px;
@@ -159,14 +185,19 @@ section {
 	}
 	.content {
 		p {
-			margin-bottom: $bottom-25px;
+			margin-bottom: 25px;
+			font-size: 16px;
+			line-height: 24px;
 		}
+	}
+	.copy {
+		margin-bottom: 50px;
 	}
 }
 
 .section-footer {
 	display: inline-block;
-	padding: 25px 0;
+	padding: 30px 0;
 
 	p, a {
 		font-family: 'Montserrat', sans-serif;
@@ -174,41 +205,19 @@ section {
 		line-height: 16px;
 		text-align: left;
 	}
+
 	a {
 		margin-left: 12px;
+	}
+
+	p {
+		padding-top: 10px;
 	}
 
 	.section-icons {
 		text-align: right;
 	}
 }
-
-.about {
-	.section-intro {
-		padding-bottom: 0;
-	}
-
-	.section-about {
-		h2 {
-			text-align: left;
-			font-size: 60px;
-		}
-		.section-copy {
-			margin-bottom: 0;
-			margin-top: 25px;
-			line-height: 29px;
-	    font-size: 20px;
-
-			&:first-child {
-				margin-top: 0;
-			}
-		}
-		.section-header {
-			margin-bottom: 30px;
-		}
-	}
-}
-
 
 // EXTRA
 
