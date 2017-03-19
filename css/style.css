@@ -10,19 +10,44 @@
   .aligner .aligner-item--bottom {
     align-self: flex-end; }
 
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  height: 100%; }
+
+.wrap {
+  min-height: 100%; }
+
+.main {
+  overflow: auto;
+  padding-bottom: 100px; }
+
+/* must be same height as the footer */
+.footer {
+  position: relative;
+  margin-top: -100px;
+  /* negative value of footer height */
+  height: 100px;
+  clear: both; }
+
 html {
   overflow-x: hidden; }
 
 body {
-  overflow-x: hidden;
   color: #444; }
 
 .background-alt {
   background-color: #FAFAFA; }
 
+.background-footer,
+.background-nav {
+  background-color: #F6F6F6; }
+
 nav {
   overflow-x: hidden;
-  padding: 20px 0; }
+  padding: 30px 0; }
   nav .end-md > * {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
@@ -102,7 +127,8 @@ section p {
 .content .subsection-subhead {
   margin-bottom: 20px;
   line-height: 29px;
-  font-size: 20px; }
+  font-size: 20px;
+  font-weight: 100; }
 
 .content .section-copy {
   margin-bottom: 50px; }
@@ -132,11 +158,16 @@ section p {
   padding-bottom: 50px; }
 
 .parking-app .content p {
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  font-size: 16px;
+  line-height: 24px; }
+
+.parking-app .copy {
+  margin-bottom: 50px; }
 
 .section-footer {
   display: inline-block;
-  padding: 25px 0; }
+  padding: 30px 0; }
   .section-footer p, .section-footer a {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
@@ -144,26 +175,10 @@ section p {
     text-align: left; }
   .section-footer a {
     margin-left: 12px; }
+  .section-footer p {
+    padding-top: 10px; }
   .section-footer .section-icons {
     text-align: right; }
-
-.about .section-intro {
-  padding-bottom: 0; }
-
-.about .section-about h2 {
-  text-align: left;
-  font-size: 60px; }
-
-.about .section-about .section-copy {
-  margin-bottom: 0;
-  margin-top: 25px;
-  line-height: 29px;
-  font-size: 20px; }
-  .about .section-about .section-copy:first-child {
-    margin-top: 0; }
-
-.about .section-about .section-header {
-  margin-bottom: 30px; }
 
 .box {
   width: 100%;
