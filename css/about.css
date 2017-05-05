@@ -1,5 +1,6 @@
 .about .section-intro {
-  padding-bottom: 120px; }
+  padding-top: 80px;
+  padding-bottom: 100px; }
 
 .about .section-about h2 {
   text-align: left;
@@ -9,7 +10,7 @@
   margin-bottom: 0;
   margin-top: 25px;
   line-height: 29px;
-  font-size: 20px; }
+  font-size: 17px; }
   .about .section-about .section-copy:first-child {
     margin-top: 0; }
 
