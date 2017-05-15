@@ -104,12 +104,8 @@ a {
 		max-width: 800px;
 	}
 }
-.section-intro {
+.section-intro, .box {
 	padding: 120px 0;
-}
-
-.box {
-	padding: 100px 0;
 }
 
 section {
@@ -179,7 +175,13 @@ section {
 		margin-bottom: 25px;
 	}
 }
-.parking-app {
+
+.airplane-ticket {
+	.section-intro {
+		padding-bottom: 50px;
+	}
+}
+.parking-app, .section-airplane-ticket {
 	.section-intro {
 		padding-bottom: 50px;
 	}
@@ -188,6 +190,9 @@ section {
 			margin-bottom: 25px;
 			font-size: 16px;
 			line-height: 24px;
+		}
+		.caption {
+			margin-bottom: 50px;
 		}
 	}
 	.copy {

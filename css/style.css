@@ -94,11 +94,8 @@ a {
 .content.col-lg-6 {
   max-width: 800px; }
 
-.section-intro {
+.section-intro, .box {
   padding: 120px 0; }
-
-.box {
-  padding: 150px 0; }
 
 section img {
   max-width: 100%; }
@@ -154,15 +151,21 @@ section p {
 .section-fresh .section-copy-first {
   margin-bottom: 25px; }
 
-.parking-app .section-intro {
+.airplane-ticket .section-intro {
   padding-bottom: 50px; }
 
-.parking-app .content p {
+.parking-app .section-intro, .section-airplane-ticket .section-intro {
+  padding-bottom: 50px; }
+
+.parking-app .content p, .section-airplane-ticket .content p {
   margin-bottom: 25px;
   font-size: 16px;
   line-height: 24px; }
 
-.parking-app .copy {
+.parking-app .content .caption, .section-airplane-ticket .content .caption {
+  margin-bottom: 50px; }
+
+.parking-app .copy, .section-airplane-ticket .copy {
   margin-bottom: 50px; }
 
 .section-footer {
